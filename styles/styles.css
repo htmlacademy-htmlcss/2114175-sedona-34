@@ -1,7 +1,41 @@
-body {
+@font-face {
     font-family: "PT Sans";
-    src: url("../fonts/ptsans-400.woff2") format("woff2"),
-         url("../fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src:url("../fonts/ptsans-700.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans-400-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src:url("../fonts/ptsans-400-Italic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.block-images {
+    display: block;
 }
