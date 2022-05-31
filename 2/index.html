@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"> 
     <title>Сайт туристического городка в штате Аризона "Sedona"</title> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2114175-sedona-34/2/">
 </head>
@@ -17,10 +18,10 @@
             <a class="novigation-link link-search" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="about-link" href="about.html">О Седоне</a>
+            <a class="novigation-link about-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="catalog-link" href="catalog.html">Гостиницы</a>
+            <a class="novigation-link catalog-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -31,23 +32,27 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="about-link" href="#" title="Выбранные отели">
+            <a class="novigation-link about-link" href="#" title="Выбранные отели">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button-header" href="#">Хочу сюда!</a>
+            <a class="button novigation-link button-header" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-index">
-        <div class="main-logo">
-          <h1 class="visually-hidden">Декоративное фото</h1>
-          <img class="main-decoration" src="images/welcome.png" width="458" height="352" alt="Приветсвие и логотип главной страницы.">
-          <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="main-face">
+          <div class="main-decoration">
+            <h1 class="visually-hidden">Декоративное фото</h1>
+            <img class="main-fase-img" src="images/welcome.png" width="458" height="352" alt="Приветсвие и логотип главной страницы.">
+          </div>
+          <div class="main-info">
+            <h2 class="main-face-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
         </div>
 
         <section class="advantages">
@@ -59,7 +64,7 @@
                 <p>— №1 —</p>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/advantages-img1.jpg" width="800" height="384" alt="Снимок городка.">
+              <img class="advantages-img1" src="images/advantages-img1.jpg" width="800" height="384" alt="Снимок городка.">
             </li>
 
             <li class="advantages-item">
@@ -83,7 +88,7 @@
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img src="images/advantages-img2.jpg" width="800" height="384" alt="Каменный мост.">
+              <img class="advantages-img2" src="images/advantages-img2.jpg" width="800" height="384" alt="Каменный мост.">
             </li>
 
             <li class="advantages-item">
@@ -164,24 +169,24 @@
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-button" href="https://vk.com/htmlacademy">
+            <a class="button footer-button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-button" href="https://t.me/htmlacademy">
+            <a class="button footer-button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button footer-button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
       </ul>
       </div>
 
-      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="button footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img class="footer-logo" src="images/html-logo.svg" width="115" height="34" alt="Логотип академии.">
