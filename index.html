@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button novigation-link button-header" href="#">Хочу сюда!</a>
+            <a class="novigation-link button-header" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -113,7 +113,7 @@
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribe">
@@ -128,20 +128,20 @@
 
         <section class="appointment">
           <h2 class="appointment-title">Поиск гостиницы в Седоне</h2>
-          <button class="button visually-hidden" type="button">
+          <button class="button button-close visually-hidden" type="button">
             <span class="visually-hidden">Закрыть окно.</span>
           </button>
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="appointment-date-in"> <!-- флекс контейнер-->
-              <label for="appointment-date-in">Дата заезда:</label>
-              <div>
+              <label for="appointment-date-in">Дата Заезда:</label>
+              <div class="form-date">
                 <input type="date" id="appointment-date-in" name="appointment-date-in">
                 <span class="appointment-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="appointment-date-out"> <!-- флекс контейнер-->
-              <label for="appointment-date-out">Дата выезда -:</label>
-              <div>
+              <label for="appointment-date-out">Дата Выезда:</label>
+              <div class="form-date">
                 <input type="date" id="appointment-date-out" name="appointment-date-out">
                 <span class="appointment-form-info">На эти даты есть свободные номера. Пока есть.</span>
               </div>
@@ -159,7 +159,7 @@
                 <input type="number" id="appointment-children" name="appointment-children" value="1">
               </div>
             </div>
-            <button class="button" type="submit">Найти</button>
+            <button class="button button-find" type="submit">Найти</button>
           </form>
         </section>
     </main>
@@ -168,24 +168,24 @@
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://vk.com/htmlacademy">
+            <a class="footer-button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://t.me/htmlacademy">
+            <a class="footer-button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button footer-button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
       </ul>
       </div>
 
-      <a class="button footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img class="footer-logo" src="images/html-logo.svg" width="115" height="34" alt="Логотип академии.">
