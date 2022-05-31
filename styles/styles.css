@@ -37,7 +37,16 @@ body {
     margin: 0;
     color: #000000;
     background-color: #FFFFFF;
+}
 
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #756157;
 }
 
 /* шапка */
@@ -63,6 +72,8 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     color: #FFFFFF;
     background-color: #756157;
 }
@@ -102,5 +113,27 @@ body {
 
 /* преимущества */
 
+.advantages {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    color: #000000;
+}
 
+.advantages-list h3 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.advantages-item {
+    color: #000000;
+    background-color: #82B3D3;
+}
+
+.advantages-img {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
