@@ -57,7 +57,6 @@ body {
 }
 
 .novigation-link {
-    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -81,13 +80,11 @@ body {
 /* основа */
 
 .main-index {
-    font-weight: 400;
     color: #000000;
     background-color: #FFFFFF;
 }
 
 .main-index h2 {
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -114,14 +111,11 @@ body {
 /* преимущества */
 
 .advantages {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #000000;
 }
 
 .advantages-list h3 {
-    font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -142,10 +136,8 @@ body {
 /* предложение поиска гостиницы */
 
 .search-hotel {
-    font-family: "PT sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
@@ -172,7 +164,6 @@ body {
 .subscribe {
     font-size: 22px;
     line-height: 26px;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #FFFFFF;
     text-align: center;
@@ -202,8 +193,6 @@ body {
 /* футер */
 
 .page-footer{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -226,7 +215,6 @@ body {
 /* попап */
 
 .appointment {
-    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -235,7 +223,6 @@ body {
 }
 
 .appointment-title {
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -276,7 +263,6 @@ body {
 .appointment-dropdown-box p {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 400;
     color: #FFFFFF;
     background-color: #333333;
 }
@@ -293,8 +279,6 @@ body {
 /* страница каталога */
 
 .main-inner{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
     color: #000000;
     background-color: #FFFFFF;
     text-decoration: none; 
@@ -348,7 +332,6 @@ body {
 .button-reset {
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
     text-align: center;
     color: #FFFFFF;
     background: transparent;
@@ -400,7 +383,6 @@ body {
 }
 
 .rating-line span:nth-child(2) {
-    font-weight: 400;
     color: #333333;
     text-transform: uppercase;
     background-color: #F2F2F2;
@@ -431,7 +413,6 @@ body {
 .subscribe-catalog {
     font-size: 22px;
     line-height: 26px;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
