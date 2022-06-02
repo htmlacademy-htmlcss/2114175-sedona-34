@@ -181,6 +181,8 @@ body {
 
 .field {
     font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
     background-color: #F2F2F2;
 }
 
@@ -288,9 +290,11 @@ body {
 /* страница каталога */
 
 .main-inner{
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
     color: #000000;
     background-color: #FFFFFF;
-    text-decoration: none; 
 }
 
 .inner-header {
@@ -305,14 +309,14 @@ body {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
-    color: #FFFFFF;
     text-transform: capitalize;
 }
 
 /* хлебные крошки */
 
 .breadcrumbs {
-    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
   }
   
 .breadcrumbs-link {
@@ -322,14 +326,22 @@ body {
 
 /* фильтры */
 
+.catalog-filter {
+    font-family: inherit;
+}
+
 .catalog-filter-title {
-    font-size: 20px;
-    line-height: 26px;
     font-weight: 700;
-    color: #FFFFFF;
+}
+
+.control-input {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-price {
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -339,6 +351,7 @@ body {
 }
 
 .button-reset {
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -348,28 +361,28 @@ body {
 
 /* меню каталога */
 
-.main-choose {
-    font-family: "PT Sans", sans-serif;
-    color: #000000;
-    background-color: #FFFFFF;
-  }
-
 .main-catalog-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
 
+.select-control {
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .button-choosen {
+    font-family: inherit;
     color: #242424;
-    background-color: #FFFFFF;
     text-decoration: none;
   } 
 
   /* карточки */
 
 .product-card {
-    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
     width: 340px;
     height: 438px;
 }
@@ -381,14 +394,25 @@ body {
 }
 
 .button-more {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 .button-favourites {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
     color: #FFFFFF;
     background-color: #82B3D3;   
+}
+
+.rating-line {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .rating-line span:nth-child(2) {
@@ -417,11 +441,29 @@ body {
     background-color: #F2F2F2;
 }
 
+/* количество страниц */
+
+.pagination-select {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.pagination-select-control {
+    font-family: inherit;
+}
+
 /* подписка */
 
 .subscribe-catalog {
-    background-color: #FFFFFF;
-    color: #000000;
+    color: #333333;
     text-align: center;
+
 }
 
+.subscribe-catalog-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
