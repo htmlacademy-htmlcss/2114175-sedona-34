@@ -40,8 +40,8 @@ body {
 }
 
 .button {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -69,6 +69,7 @@ body {
 .button-header {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -112,15 +113,17 @@ body {
     color: #000000;
 }
 
+.advantages-item {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.advantages-item {
-    text-align: center;
 }
 
 .advantages-img {
@@ -148,22 +151,17 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: #000000;
-    text-align: center;
 }
 
 .search-hotel-button {
-    font-size: 22px;
-    line-height: 36px;
-    font-weight: 700;
-    background-color:#756157;
+    font-family: inherit;
     color: #FFFFFF;
 }
 
 /* подписка */
 
 .subscribe {
-    background-color: #FFFFFF;
+    background-color: #82B3D3;
     color: #FFFFFF;
     text-align: center;
     background-image: url(../images/subscribe-img.png);
@@ -177,14 +175,17 @@ body {
     font-weight: 700;
 }
 
+.subscribe-form {
+    font-family: inherit;
+}
+
 .field {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
 .subscribe-button {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
+    font-family: inherit;
     background-color:#82B3D3;
     color: #FFFFFF;
 }
@@ -196,7 +197,8 @@ body {
     background-color: #FFFFFF;
 }
 
-.footer-social-item a {
+.footer-button {
+    font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
     text-decoration: none;
@@ -204,9 +206,11 @@ body {
 }
 
 .footer-contacts-phone {
+    font-family: inherit;
+    color: #000000;
+    background-color: #FFFFFF;
     font-size: 40px;
     line-height: 40px;
-    color: #000000;
     text-decoration: none;
     text-align: center;
 }
@@ -214,7 +218,6 @@ body {
 /* попап */
 
 .appointment {
-    font-weight: 700;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -226,11 +229,21 @@ body {
 }
 
 .button-close {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
+.appointment-form {
+    font-weight: 700;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
 .form-date input {
+    font-family: inherit;
     background-color: #F2F2F2;
+    font-weight: 400;
 }
 
 .appointment-error {
@@ -250,10 +263,12 @@ body {
 }
 
 .appointment-form-adult input {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
 .appointment-form-children input {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
@@ -265,12 +280,9 @@ body {
 }
 
 .button-find {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
+    font-family: inherit;
     color: #FFFFFF;
     background-color: #82B3D3;
-    text-align: center;
 }
 
 /* страница каталога */
