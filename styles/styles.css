@@ -32,8 +32,8 @@
 
 body {
     font-family: "PT Sans", sans-serif;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
     margin: 0;
     color: #000000;
     background-color: #FFFFFF;
@@ -57,8 +57,7 @@ body {
 }
 
 .novigation-link {
-    font-size: 20px;
-    line-height: 26px;
+    font-family: "PT sans", sans-serif;
     font-weight: 700;
     text-align: center;
     color: #000000;
@@ -84,13 +83,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.main-index h2 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 /* шапка маню */
 
 .main-decoration {
@@ -104,8 +96,13 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
-    font-size: 22px;
+}
+
+.main-face-title {
+    font-size: 30px;
     line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* преимущества */
@@ -115,7 +112,7 @@ body {
     color: #000000;
 }
 
-.advantages-list h3 {
+.advantages-title {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -123,8 +120,6 @@ body {
 }
 
 .advantages-item {
-    color: #000000;
-    background-color: #82B3D3;
     text-align: center;
 }
 
@@ -133,11 +128,17 @@ body {
     background-color: #82B3D3;
 }
 
+.advantages-area {
+    background-color: rgba(0.51,0.7,0.83,0.12);
+}
+
+.advantages-road {
+    background-color: rgba(0.51,0.7,0.83,0.2);
+}
+
 /* предложение поиска гостиницы */
 
 .search-hotel {
-    font-size: 22px;
-    line-height: 26px;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
@@ -162,8 +163,6 @@ body {
 /* подписка */
 
 .subscribe {
-    font-size: 22px;
-    line-height: 26px;
     background-color: #FFFFFF;
     color: #FFFFFF;
     text-align: center;
@@ -215,8 +214,6 @@ body {
 /* попап */
 
 .appointment {
-    font-size: 20px;
-    line-height: 26px;
     font-weight: 700;
     color: #000000;
     background-color: #FFFFFF;
@@ -411,8 +408,6 @@ body {
 /* подписка */
 
 .subscribe-catalog {
-    font-size: 22px;
-    line-height: 26px;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
