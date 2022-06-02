@@ -80,7 +80,7 @@ body {
 /* основа */
 
 .main-index {
-    color: #000000;
+    color: #333333;
     background-color: #FFFFFF;
 }
 
@@ -95,7 +95,7 @@ body {
 
 .main-info {
     background-color: #FFFFFF;
-    color: #000000;
+    color: #333333;
     text-align: center;
 }
 
@@ -103,9 +103,9 @@ body {
     font-size: 30px;
     line-height: 26px;
     font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
 }
-
 /* преимущества */
 
 .advantages {
@@ -123,12 +123,25 @@ body {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
+}
+
+.advantages-item p {
+    color: #000000;
 }
 
 .advantages-img {
     color: #FFFFFF;
     background-color: #82B3D3;
+}
+
+.advantages-img .advantages-title {
+    color: #FFFFFF;
+}
+
+.advantages-img p {
+    color: #FFFFFF;
 }
 
 .advantages-area {
@@ -368,6 +381,7 @@ body {
 }
 
 .select-control {
+    color: #333333;
     font-size: 18px;
     line-height: 21px;
 }
@@ -383,11 +397,13 @@ body {
 .product-card {
     font-size: 18px;
     line-height: 21px;
+    color: #333333;
     width: 340px;
     height: 438px;
 }
 
 .product-card-title {
+    color: #000000;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -416,7 +432,6 @@ body {
 }
 
 .rating-line span:nth-child(2) {
-    color: #333333;
     text-transform: uppercase;
     background-color: #F2F2F2;
 }
