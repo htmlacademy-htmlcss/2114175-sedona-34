@@ -30,11 +30,18 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     color: #000000;
     background-color: #FFFFFF;
 }
@@ -54,6 +61,28 @@ body {
 .page-header {
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-logo {
+    width: 139px;
+    margin-right: 30px;
+}
+
+.navigation-list {
+    width: 390px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    width: 264px;
+    margin-left: auto;
 }
 
 .novigation-link {
@@ -79,9 +108,18 @@ body {
 
 /* основа */
 
+.main-container {
+    flex-grow: 1;
+  }
+
 .main-index {
     color: #333333;
     background-color: #FFFFFF;
+}
+
+.page-container {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 /* шапка маню */
@@ -90,12 +128,14 @@ body {
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    text-align: center;
+}
+
+.main-fase-img {
+    display: block;
+    margin: 0 auto;
 }
 
 .main-info {
-    background-color: #FFFFFF;
-    color: #333333;
     text-align: center;
 }
 
@@ -106,6 +146,7 @@ body {
     color: #000000;
     text-transform: uppercase;
 }
+
 /* преимущества */
 
 .advantages {
@@ -113,7 +154,15 @@ body {
     color: #000000;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .advantages-item {
+    width: 400px;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -132,8 +181,14 @@ body {
 }
 
 .advantages-img {
+    display: flex;
+    width: 1199px;
     color: #FFFFFF;
     background-color: #82B3D3;
+}
+
+.advantages-img-bridge {
+    flex-direction: row-reverse;
 }
 
 .advantages-img .advantages-title {
@@ -182,6 +237,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.subscribe-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+}
+
 .subscribe-title {
     font-size: 30px;
     line-height: 36px;
@@ -212,6 +273,18 @@ body {
     background-color: #FFFFFF;
 }
 
+.page-footer-container {
+    display: flex;
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    width: 116px;
+    margin-right: 52px;
+}
+
+
 .footer-button {
     font-family: inherit;
     color: #000000;
@@ -221,6 +294,7 @@ body {
 }
 
 .footer-contacts-phone {
+    width: 720px;
     font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
@@ -228,6 +302,11 @@ body {
     line-height: 40px;
     text-decoration: none;
     text-align: center;
+}
+
+.htmlacademy-link {
+    margin-left: auto;
+    max-width: 115px;
 }
 
 /* попап */
@@ -304,6 +383,8 @@ body {
 
 .main-inner{
     font-family: "PT Sans", sans-serif;
+    margin: 0 auto;
+    width: 1200px;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -318,6 +399,11 @@ body {
     background-color: #82B3D3;
 }
 
+.inner-header-container {
+    width: 1060px;
+    margin: 35px 70px 70px 70px;
+}
+
 .inner-header-title {
     font-size: 60px;
     line-height: 78px;
@@ -328,6 +414,7 @@ body {
 /* хлебные крошки */
 
 .breadcrumbs {
+    display: flex;
     font-size: 16px;
     line-height: 21px;
   }
@@ -340,7 +427,27 @@ body {
 /* фильтры */
 
 .catalog-filter {
+    display: flex;
     font-family: inherit;
+}
+
+.filter-left {
+    display: flex;
+    margin-right: 167px;
+    width: 366px;
+}
+
+.infrastructure {
+    margin-right: 70px;
+}
+
+.filter-right {
+    display: flex;
+    width: 519px;
+}
+
+.filter-group-price {
+    margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -374,6 +481,7 @@ body {
 
 /* меню каталога */
 
+
 .main-catalog-title {
     font-size: 30px;
     line-height: 36px;
@@ -387,6 +495,7 @@ body {
 }
 
 .button-choosen {
+    width: 1057px;
     font-family: inherit;
     color: #242424;
     text-decoration: none;
@@ -394,12 +503,16 @@ body {
 
   /* карточки */
 
+.product-list {
+    margin: 0;
+    width: 1056px;
+}
+
 .product-card {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
     width: 340px;
-    height: 438px;
 }
 
 .product-card-title {
