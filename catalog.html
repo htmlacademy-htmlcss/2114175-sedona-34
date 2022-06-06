@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8"> 
     <title>Каталог поиска</title> 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -42,12 +41,13 @@
       </nav>
     </header>
 
-      <main class="main-inner">
+      <main class="main-inner main-container">
         <header class="inner-header">
+          <div class="inner-header-container">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    <a class="visually-hidden breadcrumbs-link" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
@@ -55,9 +55,9 @@
             </ol>
             <section class="catalog-products">
               <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-              <div class="filter-left">
-                <form class="catalog-filter" action="echo.htmlacademy.ru/" method="get">
-                  <fieldset class="catalog-filter-group">
+              <form class="catalog-filter" action="echo.htmlacademy.ru/" method="get">
+                <div class="filter-left">
+                  <fieldset class="catalog-filter-group infrastructure">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -96,21 +96,26 @@
                             </label>
                           </li>
                         </ul>
-                    </fieldset>
-              </div>
-              <div class="filter-right">
-                 <fieldset class="catalog-filter-group">
-                    <label class="catalog-filter-title" for="price-range">Стоимость, ₽:</label>
-                    <input type="range" name="price-range" id="price-range" min="0" max="9000" step="1">
-                </fieldset>
-                <button class="button button-price" type="submit">Применить</button>
-                <button class="button-reset" type="reset">Сбросить</button>
-              </div>
-              </form>      
+                  </fieldset>
+                </div>
+
+                <div class="filter-right">
+                  <fieldset class="catalog-filter-group filter-group-price">
+                      <label class="catalog-filter-title" for="price-range">Стоимость, ₽:</label>
+                      <input class="control-input" type="range" name="price-range" id="price-range" min="0" max="9000" step="1">
+                  </fieldset>
+
+                  <div class="button-container">
+                    <button class="button button-price" type="submit">Применить</button>
+                    <button class="button-reset" type="reset">Сбросить</button>
+                  </div>
+                </div>
+              </form> 
             </section>
+          </div>
         </header>
 
-        <section class="main-catalog">  
+        <section class="main-catalog main-container">  
           <div class="main-choose">
             <h2 class="main-catalog-title">Найдено гостиниц: 38</h2>       
             <select class="select-control" aria-label="Сортировка">
@@ -220,7 +225,7 @@
           </div>
         </section> 
         <section class="subscribe-catalog">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
             <label for="subscribe-email" class="visually-hidden">Email</label>
@@ -233,31 +238,33 @@
       </main>
 
       <footer class="page-footer">
-        <div class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Vkontakte</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-        </ul>
-        </div>
+        <div class="page-footer-container">
+          <div class="footer-social">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-button" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Vkontakte</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-button" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-button" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+          </ul>
+          </div>
   
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-logo" src="images/html-logo.svg" width="115" height="34" alt="Логотип академии.">
-        </a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="footer-logo" src="images/html-logo.svg" width="115" height="34" alt="Логотип академии.">
+          </a>
+      </div>
       </footer>
   </body>
 </html>

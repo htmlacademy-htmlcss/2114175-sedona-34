@@ -30,18 +30,25 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     color: #000000;
     background-color: #FFFFFF;
 }
 
 .button {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -56,10 +63,30 @@ body {
     background-color: #FFFFFF;
 }
 
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-logo {
+    width: 139px;
+    margin-right: 30px;
+}
+
+.navigation-list {
+    width: 390px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    width: 264px;
+    margin-left: auto;
+}
+
 .novigation-link {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 26px;
+    font-family: "PT sans", sans-serif;
     font-weight: 700;
     text-align: center;
     color: #000000;
@@ -71,6 +98,7 @@ body {
 .button-header {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -80,18 +108,18 @@ body {
 
 /* основа */
 
+.main-container {
+    flex-grow: 1;
+  }
+
 .main-index {
-    font-weight: 400;
-    color: #000000;
+    color: #333333;
     background-color: #FFFFFF;
 }
 
-.main-index h2 {
-    font-family: "PT Sans", sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
+.page-container {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 /* шапка маню */
@@ -100,52 +128,88 @@ body {
     background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    text-align: center;
+}
+
+.main-fase-img {
+    display: block;
+    margin: 0 auto;
 }
 
 .main-info {
-    background-color: #FFFFFF;
-    color: #000000;
     text-align: center;
-    font-size: 22px;
+}
+
+.main-face-title {
+    font-size: 30px;
     line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 /* преимущества */
 
 .advantages {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #000000;
 }
 
-.advantages-list h3 {
-    font-family: "PT Sans", sans-serif;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-item {
-    color: #000000;
-    background-color: #82B3D3;
+    width: 400px;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
 }
 
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.advantages-item p {
+    color: #000000;
+}
+
 .advantages-img {
+    display: flex;
+    width: 1199px;
     color: #FFFFFF;
     background-color: #82B3D3;
+}
+
+.advantages-img-bridge {
+    flex-direction: row-reverse;
+}
+
+.advantages-img .advantages-title {
+    color: #FFFFFF;
+}
+
+.advantages-img p {
+    color: #FFFFFF;
+}
+
+.advantages-area {
+    background-color: rgba(0.51,0.7,0.83,0.12);
+}
+
+.advantages-road {
+    background-color: rgba(0.51,0.7,0.83,0.2);
 }
 
 /* предложение поиска гостиницы */
 
 .search-hotel {
-    font-family: "PT sans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
@@ -155,30 +219,28 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: #000000;
-    text-align: center;
 }
 
 .search-hotel-button {
-    font-size: 22px;
-    line-height: 36px;
-    font-weight: 700;
-    background-color:#756157;
+    font-family: inherit;
     color: #FFFFFF;
 }
 
 /* подписка */
 
 .subscribe {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    background-color: #FFFFFF;
+    background-color: #82B3D3;
     color: #FFFFFF;
     text-align: center;
     background-image: url(../images/subscribe-img.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.subscribe-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
 }
 
 .subscribe-title {
@@ -187,14 +249,19 @@ body {
     font-weight: 700;
 }
 
+.subscribe-form {
+    font-family: inherit;
+}
+
 .field {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
     background-color: #F2F2F2;
 }
 
 .subscribe-button {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
+    font-family: inherit;
     background-color:#82B3D3;
     color: #FFFFFF;
 }
@@ -202,13 +269,24 @@ body {
 /* футер */
 
 .page-footer{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
     color: #000000;
     background-color: #FFFFFF;
 }
 
-.footer-social-item a {
+.page-footer-container {
+    display: flex;
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    width: 116px;
+    margin-right: 52px;
+}
+
+
+.footer-button {
+    font-family: inherit;
     color: #000000;
     background-color: #FFFFFF;
     text-decoration: none;
@@ -216,37 +294,50 @@ body {
 }
 
 .footer-contacts-phone {
+    width: 720px;
+    font-family: inherit;
+    color: #000000;
+    background-color: #FFFFFF;
     font-size: 40px;
     line-height: 40px;
-    color: #000000;
     text-decoration: none;
     text-align: center;
+}
+
+.htmlacademy-link {
+    margin-left: auto;
+    max-width: 115px;
 }
 
 /* попап */
 
 .appointment {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
     color: #000000;
     background-color: #FFFFFF;
 }
 
 .appointment-title {
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
 }
 
 .button-close {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
+.appointment-form {
+    font-weight: 700;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
 .form-date input {
+    font-family: inherit;
     background-color: #F2F2F2;
+    font-weight: 400;
 }
 
 .appointment-error {
@@ -266,38 +357,38 @@ body {
 }
 
 .appointment-form-adult input {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
 .appointment-form-children input {
+    font-family: inherit;
     background-color: #F2F2F2;
 }
 
 .appointment-dropdown-box p {
     font-size: 16px;
     line-height: 21px;
-    font-weight: 400;
     color: #FFFFFF;
     background-color: #333333;
 }
 
 .button-find {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
+    font-family: inherit;
     color: #FFFFFF;
     background-color: #82B3D3;
-    text-align: center;
 }
 
 /* страница каталога */
 
 .main-inner{
     font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    margin: 0 auto;
+    width: 1200px;
+    font-size: 22px;
+    line-height: 26px;
     color: #000000;
     background-color: #FFFFFF;
-    text-decoration: none; 
 }
 
 .inner-header {
@@ -308,18 +399,24 @@ body {
     background-color: #82B3D3;
 }
 
+.inner-header-container {
+    width: 1060px;
+    margin: 35px 70px 70px 70px;
+}
+
 .inner-header-title {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
-    color: #FFFFFF;
     text-transform: capitalize;
 }
 
 /* хлебные крошки */
 
 .breadcrumbs {
-    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    line-height: 21px;
   }
   
 .breadcrumbs-link {
@@ -329,14 +426,42 @@ body {
 
 /* фильтры */
 
+.catalog-filter {
+    display: flex;
+    font-family: inherit;
+}
+
+.filter-left {
+    display: flex;
+    margin-right: 167px;
+    width: 366px;
+}
+
+.infrastructure {
+    margin-right: 70px;
+}
+
+.filter-right {
+    display: flex;
+    width: 519px;
+}
+
+.filter-group-price {
+    margin-right: 70px;
+}
+
 .catalog-filter-title {
-    font-size: 20px;
-    line-height: 26px;
     font-weight: 700;
-    color: #FFFFFF;
+}
+
+.control-input {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-price {
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -346,9 +471,9 @@ body {
 }
 
 .button-reset {
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400;
     text-align: center;
     color: #FFFFFF;
     background: transparent;
@@ -356,11 +481,6 @@ body {
 
 /* меню каталога */
 
-.main-choose {
-    font-family: "PT Sans", sans-serif;
-    color: #000000;
-    background-color: #FFFFFF;
-  }
 
 .main-catalog-title {
     font-size: 30px;
@@ -368,40 +488,63 @@ body {
     font-weight: 700;
 }
 
+.select-control {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .button-choosen {
+    width: 1057px;
+    font-family: inherit;
     color: #242424;
-    background-color: #FFFFFF;
     text-decoration: none;
   } 
 
   /* карточки */
 
+.product-list {
+    margin: 0;
+    width: 1056px;
+}
+
 .product-card {
-    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
     width: 340px;
-    height: 438px;
 }
 
 .product-card-title {
+    color: #000000;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
 }
 
 .button-more {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
     color: #FFFFFF;
 }
 
 .button-favourites {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
     color: #FFFFFF;
     background-color: #82B3D3;   
 }
 
+.rating-line {
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .rating-line span:nth-child(2) {
-    font-weight: 400;
-    color: #333333;
     text-transform: uppercase;
     background-color: #F2F2F2;
 }
@@ -426,14 +569,29 @@ body {
     background-color: #F2F2F2;
 }
 
+/* количество страниц */
+
+.pagination-select {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.pagination-select-control {
+    font-family: inherit;
+}
+
 /* подписка */
 
 .subscribe-catalog {
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    background-color: #FFFFFF;
-    color: #000000;
+    color: #333333;
     text-align: center;
+
 }
 
+.subscribe-catalog-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
