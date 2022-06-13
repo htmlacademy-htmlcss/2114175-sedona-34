@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8"> 
-    <title>Каталог поиска</title> 
+    <meta charset="utf-8">
+    <title>Каталог поиска</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -53,7 +53,7 @@
                   <a class="breadcrumbs-link">Гостиницы</a>
               </li>
           </ol>
-          
+
           <section class="catalog-products">
             <h2 class="hidden-title visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="echo.htmlacademy.ru/" method="get">
@@ -111,28 +111,30 @@
                   <button class="button-reset" type="reset">Сбросить</button>
                 </div>
               </div>
-            </form> 
+            </form>
           </section>
         </div>
       </header>
 
-      <section class="main-catalog main-container">  
+      <section class="main-catalog main-container">
         <div class="main-choose">
-          <h2 class="main-catalog-title">Найдено гостиниц: 38</h2>       
+          <h2 class="main-catalog-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="button-choosen button-item">
-              <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a href="#" class="button-choosen button-unfold">
-              <span class="visually-hidden">Показать развернуто</span>
-          </a>
-          <a href="#" class="button-choosen button-list">
-              <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="button-choosen-container">
+            <a href="#" class="button-choosen button-item">
+                <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a href="#" class="button-choosen button-unfold">
+                <span class="visually-hidden">Показать развернуто</span>
+            </a>
+            <a href="#" class="button-choosen button-list">
+                <span class="visually-hidden">Показать список</span>
+            </a>
+        </div>
         </div>
 
         <ul class="product-list">
@@ -155,7 +157,7 @@
             <a class="button button-more" href="#">подробнее</a>
             <a class="button button-favourites" href="#">в избранное</a>
             <p class="rating-line">
-              <span class="visually-hidden">Четыре звезды</span>
+              <span class="visually-hidden rating-stars">Четыре звезды</span>
               <span class="rating">Рейтинг: 9,2</span>
             </p>
           </li>
@@ -167,7 +169,7 @@
             <a class="button button-more" href="#">подробнее</a>
             <a class="button button-favourites" href="#">в избранное</a>
             <p class="rating-line">
-              <span class="visually-hidden">Три звезды</span>
+              <span class="visually-hidden rating-stars">Три звезды</span>
               <span class="rating">Рейтинг: 6,9</span>
             </p>
           </li>
@@ -179,7 +181,7 @@
             <a class="button button-more" href="#">подробнее</a>
             <a class="button button-favourites" href="#">в избранное</a>
             <p class="rating-line">
-              <span class="visually-hidden">Две звезды</span>
+              <span class="visually-hidden rating-stars">Две звезды</span>
               <span class="rating">Рейтинг: 5,0</span>
             </p>
           </li>
@@ -208,7 +210,7 @@
           </ul>
 
           <div class="pagination-select">
-            <p class="pagination-info">Гостиниц на странице:</p>
+            <p>Гостиниц на странице:</p>
             <select class="pagination-select-control" aria-label="количество страниц">
               <option>1</option>
               <option>2</option>
@@ -223,7 +225,7 @@
             </select>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section class="subscribe-catalog">
         <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
@@ -231,9 +233,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
           <label for="subscribe-email" class="visually-hidden">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-            <button class="button subscribe-button" type="submit">
-              <span>Подписаться</span>
-            </button>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -257,9 +257,9 @@
               </a>
             </li>
           </ul>
-  
+
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        
+
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <img class="footer-logo" src="images/html-logo.svg" width="115" height="34" alt="Логотип академии.">
           </a>
