@@ -72,17 +72,17 @@ overflow: hidden;
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .navigation {
   display: flex;
-  width: 1060px;
   margin: 0 auto;
+  min-width: 1060px;
 }
 
 .navigation-logo {
-  width: 139px;
+  min-width: 139px;
   margin-right: 30px;
 }
 
@@ -93,6 +93,7 @@ position: absolute;
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 390px;
   min-width: 390px;
   margin: 0;
   padding: 0;
@@ -104,8 +105,9 @@ position: absolute;
 }
 
 .navigation-user {
+  max-width: 264px;
   min-width: 264px;
-  margin-left: auto;
+  margin-left: 237px;
 }
 
 .navigation-user .navigation-link {
@@ -126,6 +128,10 @@ text-transform: capitalize;
 }
 
 .button-header {
+  display: block;
+  margin-left: 20px;
+  margin-top: 14px;
+  padding: 9px 30px 8px 30px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -583,6 +589,7 @@ text-transform: capitalize;
 
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
   font-family: inherit;
   margin: 0;
 }
@@ -590,23 +597,22 @@ text-transform: capitalize;
 .catalog-filter-group {
   margin: 0;
   padding: 0;
+  border: none;
+}
+.catalog-filter-group:nth-child(2) {
+  margin-right: none;
 }
 
 .filter-left {
   display: flex;
-  margin-right: 167px;
-  width: 366px;
-}
-
-.infrastructure {
-  margin-right: 70px;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  width: 367px;
 }
 
 .filter-right {
   display: flex;
-  width: 519px;
+  justify-content: space-between;
+  width: 518px;
 }
 
 .filter-group-price {
@@ -615,10 +621,19 @@ text-transform: capitalize;
 
 .catalog-filter-title {
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
 }
 
 .control-input {
@@ -716,6 +731,7 @@ text-transform: capitalize;
   padding: 20px;
   color: #333333;
   max-width: 300px;
+  max-height: 438px;
 }
 
 .product-card-image {
@@ -724,50 +740,83 @@ text-transform: capitalize;
 
 .product-card-title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
+.explanation-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+
 .explanation {
   margin: 0;
+  width: 133px;
+  margin-right: 24px;
+}
+
+.price {
+  margin: 0;
+  width: 143px;
+}
+
+.product-card-button {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
 .button-more {
+  display: block;
+  width: 110px;
+  height: 20px;
+  padding: 9px 15px 8px 15px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 16px;
 }
 
 .button-favourites {
+  display: block;
+  width: 110px;
+  height: 20px;
+  padding: 9px 15px 8px 15px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 16px;
   background-color: #82B3D3;
 }
 
 .rating-line {
+  display: flex;
+  width: 300px;
+  height: 37px;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
-.rating-line span:nth-child(2) {
-  text-transform: uppercase;
-  background-color: #F2F2F2;
+.rating-stars {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 140px;
+  height: 18px;
+  margin: 0;
 }
-
 
 .rating {
+  width: 95px;
+  height: 20px;
   margin: 0;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
   padding: 9px 32px 8px 33px;
 }
 
