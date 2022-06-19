@@ -62,18 +62,21 @@
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label for="pool" class="control">
-                          <input class="control-input" type="checkbox" id="pool" name="pool" checked>Бассейн
+                        <label class="filter-title" for="pool" class="control">
+                          <input class="control-input" type="checkbox" id="pool" name="pool" checked>
+                          <span class="control-input-name">Бассейн</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label for="parking" class="control">
-                          <input class="control-input" type="checkbox" id="parking" name="parking" checked>Парковка
+                        <label class="filter-title" for="parking" class="control">
+                          <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+                          <span class="control-input-name">Парковка</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label for="wi-fi" class="control">
-                          <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">Wi-Fi
+                        <label class="filter-title" for="wi-fi" class="control">
+                          <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">
+                          <span class="control-input-name">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -82,18 +85,21 @@
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                          <label for="hostel" class="control">
-                            <input class="control-input" type="radio" id="hostel" name="hostel" value="hostel" checked>Гостиница
+                          <label class="filter-title" for="hostel" class="control">
+                            <input class="control-input" type="radio" id="hostel" name="home" value="hostel" checked>
+                            <span class="control-input-name">Гостиница</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label for="hotel" class="control">
-                            <input class="control-input" type="radio" id="hotel" name="hotel" value="hotel" >Мотель
+                          <label class="filter-title" for="hotel" class="control">
+                            <input class="control-input" type="radio" id="hotel" name="home" value="hotel" >
+                            <span class="control-input-name">Мотель</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label for="apartments" class="control">
-                            <input class="control-input" type="radio" id="apartments" value="apartments">Апартаменты
+                          <label class="filter-title" for="apartments" class="control">
+                            <input class="control-input" type="radio" id="apartments" name="home" value="apartments">
+                            <span class="control-input-name">Апартаменты</span>
                           </label>
                         </li>
                       </ul>
@@ -225,7 +231,7 @@
               <a class="pagination-link pagination-next">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">10</a>
+              <a class="pagination-link pagination-last">10</a>
             </li>
           </ul>
 
@@ -251,9 +257,11 @@
         <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
-          <label for="subscribe-email" class="visually-hidden">Email</label>
+          <div class="subscribe-container">
+            <label for="subscribe-email" class="visually-hidden">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">Подписаться</button>
+          </div>
         </form>
       </section>
     </main>
