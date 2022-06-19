@@ -153,7 +153,8 @@ text-transform: capitalize;
 .main-index {
   color: #333333;
   background-color: #FFFFFF;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -404,12 +405,12 @@ text-transform: capitalize;
 .page-footer{
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .page-footer-container {
   display: flex;
-  width: 1056px;
+  max-width: 1056px;
   margin: 0 auto;
 }
 
