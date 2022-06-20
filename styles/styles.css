@@ -80,6 +80,8 @@ overflow: hidden;
   display: flex;
   margin: 0 auto;
   min-width: 1060px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation-logo {
@@ -175,7 +177,7 @@ text-transform: capitalize;
 .main-fase-img {
   display: block;
   margin: 0  auto;
-  padding-top: 51px;
+  padding-top: 50px;
   padding-bottom: 82px;
 }
 
@@ -187,11 +189,11 @@ text-transform: capitalize;
 
 .main-face-title {
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   padding: 0;
   width: 630px;
   font-size: 30px;
-  line-height: 26px;
+  line-height: 36px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -272,13 +274,38 @@ text-transform: capitalize;
 }
 
 .advantages-info {
+  position: relative;
   min-height: 223px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+.home {
+  position: absolute;
+  background-image: url("../images/home.svg");
+  width: 75px;
+  height: 72px;
+  left: 163px;
+}
+
+.burger {
+  position: absolute;
+  background-image: url("../images/burger.svg");
+  width: 75px;
+  height: 72px;
+  left: 163px;
+}
+
+.gift {
+  position: absolute;
+  background-image: url("../images/gift.svg");
+  width: 75px;
+  height: 76px;
+  left: 163px;
+}
+
 .advantages-info h3 {
-  margin-top: 30px;
+  margin-top: 102px;
 }
 
 .advantages-number {
@@ -346,10 +373,8 @@ text-transform: capitalize;
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1200px;
+  padding: 94px 200px 94px 200px;
+  max-width: 1200px;
 }
 
 .subscribe-title {
@@ -357,19 +382,19 @@ text-transform: capitalize;
   line-height: 36px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 29px;
   text-transform: uppercase;
 }
 
 .subscribe p {
   margin: 0;
-  margin-top: 29px;
   margin-bottom: 46px;
 }
 
 .subscribe-form {
   font-family: inherit;
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
 }
 
 .subscribe-container {
@@ -384,7 +409,7 @@ text-transform: capitalize;
   border: 0;
   padding: 0;
   width: 600px;
-  height: 58px;
+  height: 60px;
   background-color: #F2F2F2;
   border-radius: 10px 0 0 10px;
 }
@@ -411,6 +436,8 @@ text-transform: capitalize;
 .page-footer-container {
   display: flex;
   max-width: 1056px;
+  padding-left: 72px;
+  padding-right: 72px;
   margin: 0 auto;
 }
 
@@ -420,6 +447,7 @@ text-transform: capitalize;
   width: 116px;
   margin: 0;
   margin-top: 49px;
+  margin-right: 52px;
   margin-bottom: 54px;
   padding: 0;
   list-style-type: none;
@@ -445,7 +473,9 @@ text-transform: capitalize;
 }
 
 .footer-contacts-phone {
+  margin: 0;
   margin-top:  40px;
+  margin-right: 53px;
   width: 720px;
   font-family: inherit;
   color: #000000;
@@ -684,16 +714,19 @@ text-transform: capitalize;
 }
 
 .button-container {
+  display: flex;
+  flex-direction: column;
   max-width: 160px;
   min-height: 88px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 61px;
 }
 
 .button-price {
   font-family: inherit;
   padding: 14px 35px;
   border: none;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -704,10 +737,16 @@ text-transform: capitalize;
 
 .button-reset {
   font-family: inherit;
-  border: none;
+  border: 3px solid transparent;
+  padding: 3px 16px 4px 14px;
+  margin: 0;
+  position: absolute;
+  margin-top: 63px;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  align-self: center;
   color: #FFFFFF;
   background: transparent;
 }
