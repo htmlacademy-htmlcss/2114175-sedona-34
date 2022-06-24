@@ -574,6 +574,7 @@ text-transform: capitalize;
   height: 60px;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 10px 0 0 10px;
+  outline: none;
 }
 
 .subscribe-button {
@@ -642,22 +643,23 @@ text-transform: capitalize;
   line-height: 40px;
   text-decoration: none;
   text-align: center;
+  outline: none;
 }
 
-.footer-social-icon {
+.footer-button {
   fill: rgba(131, 179, 211, 1);
 }
 
-.footer-social-icon:hover {
+.footer-button:hover {
   fill: rgba(104, 162, 202, 1);
 }
 
-.footer-social-icon:focus {
+.footer-button:focus {
   fill: rgba(104, 162, 202, 1);
   outline: none;
 }
 
-.footer-social-icon:active {
+.footer-button:active {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -693,20 +695,20 @@ text-transform: capitalize;
   text-align: right;
 }
 
-.footer-logo {
+.htmlacademy-link {
   fill: rgba(0, 0, 0, 1);
 }
 
-.footer-logo:hover {
+.htmlacademy-link:hover {
   fill: rgba(117, 97, 87, 1);
 }
 
-.footer-logo:focus {
+.htmlacademy-link:focus {
   fill: rgba(117, 97, 87, 1);
   outline: none;
 }
 
-.footer-logo:active {
+.htmlacademy-link:active {
   fill: rgba(117, 97, 87, 0.3);
 }
 
