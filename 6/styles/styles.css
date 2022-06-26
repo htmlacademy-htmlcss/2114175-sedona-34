@@ -116,6 +116,7 @@ body {
 
 .logo {
 position: absolute;
+z-index: 1;
 }
 
 .navigation-list {
@@ -306,6 +307,7 @@ text-transform: capitalize;
 /* шапка маню */
 
 .main-decoration {
+  position: relative;
   background-image: url("../images/index-background.jpg");
   background-size: 1200px 485px;
   background-repeat: no-repeat;
@@ -313,16 +315,15 @@ text-transform: capitalize;
   box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.divider {
+.main-decoration::after {
+  content: "";
   position: absolute;
   background-image: url("../images/divider.svg");
   background-size: 1200px 57px;
   background-repeat: no-repeat;
-  min-width: 1200px;
-  min-height: 57px;
-  margin: 0;
-  padding: 0;
-  top: -57px;
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
 }
 
 .main-fase-img {
@@ -448,25 +449,29 @@ text-transform: capitalize;
   background-color: rgba(255, 255, 255, 1);
 }
 
-.home {
+.advantages-info:nth-child(2) {
   background-image: url("../images/home.svg");
   background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 102px;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
-.burger {
+.advantages-info .advantages-title {
+  margin-top: 102px;
+}
+
+.advantages-info:nth-child(3) {
   background-image: url("../images/burger.svg");
   background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 102px;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
-.gift {
+.advantages-info:nth-child(4) {
   background-image: url("../images/gift.svg");
   background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 102px;
+  background-position-x: center;
+  background-position-y: 80px;
 }
 
 .advantages-img .advantages-title {
