@@ -127,7 +127,7 @@
         <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="subscribe-container">
               <label for="subscribe-email" class="visually-hidden">Email</label>
               <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
@@ -135,41 +135,6 @@
            </div>
           </form>
         </section>
-
-     <!-- <section class="appointment">
-          <h2 class="appointment-title">Поиск гостиницы в Седоне</h2>
-          <button class="button button-close visually-hidden" type="button">
-            <span class="visually-hidden">Закрыть окно.</span>
-          </button>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="appointment-date-in">
-            <label for="appointment-date-in">Дата Заезда:</label>
-            <div class="form-date">
-              <input type="date" id="appointment-date-in" name="appointment-date-in">
-              <span class="appointment-error">Мы не можем отправить вас в прошлое.</span>
-            </div>
-            <div class="appointment-date-out">
-              <label for="appointment-date-out">Дата Выезда:</label>
-              <div class="form-date">
-                <input type="date" id="appointment-date-out" name="appointment-date-out">
-                <span class="appointment-form-info">На эти даты есть свободные номера. Пока есть.</span>
-              </div>
-            </div>
-            <div class="appointment-guests">
-            <div class="appointment-form-adult">
-                <label for="appointment-adult">Взрослые:</label>
-                <input type="number" id="appointment-adult" name="appointment-adult" value="2">
-            </div>
-            <div class="appointment-form-children">
-              <label for="appointment-children">Дети:</label>
-              <div class="visually-hidden appointment-dropdown-box">
-                <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-              </div>
-              <input type="number" id="appointment-children" name="appointment-children" value="1">
-            </div>
-            <button class="button button-find" type="submit">Найти</button>
-          </form>
-        </section> -->
       </div>
     </main>
 
@@ -229,5 +194,90 @@
         </a>
       </div>
     </footer>
+
+    <section class="appointment modal-container-close">
+      <div class="appointment-container">
+        <h2 class="appointment-title">Поиск гостиницы в Седоне</h2>
+        <button class="button button-close" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+          <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
+        </button>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="appointment-date-in">
+            <label class="appointment-date" for="appointment-date-in">Дата Заезда:</label>
+            <div class="form-date-container">
+              <input class="form-date form-style" type="text" id="appointment-date-in" name="appointment-date-in" placeholder="Укажите дату">
+              <span class="appointment-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+          <div class="appointment-date-out">
+            <label class="appointment-date" for="appointment-date-out">Дата Выезда:</label>
+            <div class="form-date-container">
+              <input class="form-date form-style" type="text" id="appointment-date-out" name="appointment-date-out" placeholder="Укажите дату">
+              <span class="appointment-form-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </div>
+          <div class="appointment-guests">
+            <div class="appointment-form-adult">
+              <label class="appointment-date" for="appointment-adult">Взрослые:</label>
+              <div class="input-number">
+                <input class="adult-number form-style" type="text" id="appointment-adult" name="appointment-adult" value="2">
+                <button class="number-plus plus-minus">
+                  <svg class="plus" width="13" height="13"xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="number-minus plus-minus">
+                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="appointment-form-children">
+              <span class="appointment-date">
+                <label class="appointment-date" for="appointment-children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <div class="tooltip-icon">
+                      <svg width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_33716_652)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                        <path d="M1 0H0V1H1V0Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_33716_652">
+                        <rect width="1" height="9" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <div class="input-number">
+                <input class="children-number form-style" type="text" id="appointment-children" name="appointment-children" value="1">
+                <button class="number-plus plus-minus">
+                  <svg class="plus" width="13" height="13"xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                    </g>
+                  </svg>
+                </button>
+                <button class="number-minus plus-minus">
+                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="button button-find" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
