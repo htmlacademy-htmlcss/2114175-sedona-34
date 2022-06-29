@@ -850,6 +850,22 @@ text-transform: capitalize;
   background-position: 50% 50%;
 }
 
+.control-input[type="checkbox"]:hover + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(131, 179, 211, 1);
+  left: -3px;
+  top: -2px;
+  outline: none;
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -858,6 +874,22 @@ text-transform: capitalize;
   background-image: url(../images/radio.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  border: 3px solid rgba(131, 179, 211, 1);
+  left: -3px;
+  top: -2px;
+  outline: none;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .filter-right {
@@ -877,7 +909,11 @@ text-transform: capitalize;
 .range {
   display: flex;
   max-width: 287px;
-  margin-top: 32px;
+  margin-top: 34px;
+}
+
+.catalog-filter-label {
+  position: relative;
 }
 
 .range-scale {
@@ -899,7 +935,7 @@ text-transform: capitalize;
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 1);
-  border: 3px solid transparent;
+  border: transparent;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -909,7 +945,7 @@ text-transform: capitalize;
 }
 
 .range-toggle:focus {
-  border-color: rgba(131, 179, 211, 1);
+  border: 3px solid rgba(131, 179, 211, 1);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   outline: none;
 }
@@ -933,50 +969,72 @@ text-transform: capitalize;
   justify-content: center;
 }
 
-.catalog-filter-label {
-display: flex;
-justify-content: space-between;
-width: 144px;
-height: 45px;
-padding-left: 17px;
-padding-right: 14px;
-border-radius: 4px 0 0 4px;
-border: 2px solid rgba(255, 255, 255, 1);
+.range-input {
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+  width: 100px;
+  height: 16px;
+  padding: 14px 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  appearance: textfield;
 }
 
-.catalog-filter-label:hover {
+.price-input-min {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+}
+
+.price-input-max {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid rgba(255, 255, 255, 1);
+}
+
+.range-input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.range-input:hover {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-label:focus {
-  border-color: rgba(255, 255, 255, 1);
+.range-input:focus {
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 0 3px rgba(129, 179, 210, 1),
+        inset 0 0 0 3px rgba(129, 179, 210, 1);
+        outline: none;
 }
 
-.catalog-filter-label span{
-  margin-top: 6px;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.catalog-filter-label:nth-child(2) {
-  border-radius: 0 4px 4px 0;
-  border-left: none;
-}
-
-
-.range-input {
-width: 48px;
-font: inherit;
-color: rgba(255, 255, 255, 1);
-text-align: center;
-outline: none;
-background-color: transparent;
-appearance: textfield;
+.range-input:focus:not(:placeholder-shown) {
+  background-color: rgba(117, 98, 87, 1);
+  box-shadow: none;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
 appearance: none;
 margin: 0;
+}
+
+.range-min {
+  position: absolute;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  top: 12px;
+  left: 112px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.range-max {
+  position: absolute;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  top: 12px;
+  right: 17px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-title {
@@ -1012,30 +1070,6 @@ margin: 0;
   padding-left: 39px;
 }
 
-.control-mark {
-  position: absolute;
-  left: 0;
-  width: 14px;
-  height: 14px;
-  top: 1px;
-  border: 3px solid transparent;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.filter-title:hover .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.filter-title:focus .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(131, 179, 211, 1);
-}
-
-.filter-title:active .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .control-input-name {
   font-family: inherit;
   font-size: 18px;
@@ -1050,7 +1084,7 @@ margin: 0;
   max-width: 160px;
   min-height: 88px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 59px;
 }
 
 .button-price {
