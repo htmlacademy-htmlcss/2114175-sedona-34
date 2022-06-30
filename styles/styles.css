@@ -999,14 +999,14 @@ text-transform: capitalize;
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.range-input:focus {
+.range-input:focus-visible {
   border: 2px solid rgba(255, 255, 255, 1);
   box-shadow: 0 0 0 3px rgba(129, 179, 210, 1),
         inset 0 0 0 3px rgba(129, 179, 210, 1);
         outline: none;
 }
 
-.range-input:focus:not(:placeholder-shown) {
+.range-input:focus{
   background-color: rgba(117, 98, 87, 1);
   box-shadow: none;
 }
@@ -1338,8 +1338,6 @@ margin: 0;
   color: rgba(255, 255, 255, 1);
   text-align: center;
 }
-
-
 
 .button-favourites {
   width: 120px;
@@ -1714,13 +1712,13 @@ margin: 0;
   background-color: rgba(230, 230, 230, 1);
 }
 
-.form-style:focus {
+.form-style:focus-visible {
   background-color: rgba(230, 230, 230, 1);
   border-color: rgba(131, 179, 211, 1);
   outline: none;
 }
 
-.form-style:focus:not(:placeholder-shown){
+.form-style:focus{
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
   border: 2px solid rgba(0, 0, 0, 1);
@@ -1864,6 +1862,10 @@ margin: 0;
   text-align: center;
   display: block;
 }
+
+.tooltip-icon:hover {
+  background-color: rgba(104, 162, 202, 1);
+  }
 
 .tooltip-icon svg {
   margin-top: 8px;
