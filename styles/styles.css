@@ -1661,18 +1661,20 @@ margin: 0;
 
 .appointment-container {
   position: relative;
-  margin: auto;
-  padding: 62px 70px 70px 68px;
+  margin: 395px auto;
+  padding: 63px 70px 70px 68px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   width: 577px;
+  height: 429px;
 }
 
 .appointment-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   margin-bottom: 63px;
@@ -1748,14 +1750,15 @@ margin: 0;
 
 .form-date {
   font: inherit;
+  font-size: 18px;
   margin: 0;
   font-weight: 400;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 4px;
-  width: 381px;
+  width: 369px;
   border: 2px solid transparent;
   color: rgba(0, 0, 0, 1);
-  padding: 10px 30px 10px 19px;
+  padding: 10px 30px 10px 18px;
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
@@ -1807,11 +1810,11 @@ margin: 0;
 
 .appointment-form-children {
   display: flex;
-  max-width: 230px;
+  width: 231px;
 }
 
 .appointment-form-adult .appointment-date {
-  margin-right: 55px;
+  margin-right: 63px;
 }
 
 .appointment-form-children .appointment-date {
@@ -1821,6 +1824,7 @@ margin: 0;
 
 .adult-number {
   font: inherit;
+  font-size: 18px;
   margin: 0;
   font-weight: 400;
   background-color: rgba(242, 242, 242, 1);
@@ -1829,12 +1833,13 @@ margin: 0;
   border: 2px solid transparent;
   text-align: center;
   color: rgba(0, 0, 0, 1);
-  padding: 9px 53px;
+  padding: 10px 53px;
   appearance: none;
 }
 
 .children-number {
   font: inherit;
+  font-size: 18px;
   margin: 0;
   font-weight: 400;
   background-color: rgba(242, 242, 242, 1);
@@ -1843,7 +1848,7 @@ margin: 0;
   border: 2px solid transparent;
   text-align: center;
   color: rgba(0, 0, 0, 1);
-  padding: 9px 53px;
+  padding: 10px 53px;
   appearance: none;
 }
 
@@ -1858,7 +1863,7 @@ margin: 0;
   padding: 3px;
   margin: 0;
   top: 12px;
-  left: 19px;
+  left: 13px;
   cursor: pointer;
   fill: rgba(0, 0, 0, 0.3);
 }
@@ -1875,7 +1880,7 @@ margin: 0;
   padding: 3px;
   margin: 0;
   top: 12px;
-  right: 19px;
+  right: 12px;
   cursor: pointer;
   fill: rgba(0, 0, 0, 0.3);
 }
@@ -1898,7 +1903,7 @@ margin: 0;
 .tooltip {
   position: absolute;
   left: 54px;
-  top: 1px;
+  top: 2px;
   width: 25px;
   height: 25px;
 }
@@ -1940,9 +1945,10 @@ margin: 0;
   border-radius: 10px;
   display: block;
   width: 216px;
+  height: 110px;
   position: absolute;
-  top: 41px;
-  left: -115px;
+  top: 40px;
+  left: -116px;
   z-index: 1;
   display: none;
 }
