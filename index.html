@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт туристического городка в штате Аризона "Sedona"</title>
+    <link rel="icon" sizes="32x32" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo navigation-link-currents" href="index.html" >
-          <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип.">
+          <img class="logo" src="./images/logo.svg" width="139" height="70" alt="Логотип.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -53,7 +55,7 @@
         <div class="main-face">
           <div class="main-decoration">
             <h1 class="inner-header-title visually-hidden">Декоративное фон</h1>
-            <img class="main-fase-img" src="images/welcome.png" width="458" height="352" alt="Приветсвие и логотип главной страницы.">
+            <img class="main-fase-img" src="./images/welcome.png" width="458" height="352" alt="Приветсвие и логотип главной страницы.">
           </div>
 
           <div class="main-info">
@@ -71,7 +73,7 @@
                 <p>— №1 —</p>
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-img1" src="images/advantages-img1.jpg" width="800" height="384" alt="Снимок городка.">
+              <img class="advantages-img1" src="./images/advantages-img1.jpg" width="800" height="384" alt="Снимок городка.">
             </li>
 
             <li class="advantages-item advantages-info">
@@ -90,7 +92,7 @@
             </li>
 
             <li class="advantages-item advantages-img">
-              <img class="advantages-img2" src="images/advantages-img2.jpg" width="800" height="384" alt="Каменный мост.">
+              <img class="advantages-img2" src="./images/advantages-img2.jpg" width="800" height="384" alt="Каменный мост.">
               <div class="advantages-wrapper">
                 <h3 class="advantages-title">Там есть <br>мост дьявола</h3>
                 <p>— №2 —</p>
@@ -209,14 +211,14 @@
           <div class="appointment-date-in">
             <label class="appointment-date" for="appointment-date-in">Дата Заезда:</label>
             <div class="form-date-container">
-              <input class="form-date form-style" type="text" id="appointment-date-in" name="appointment-date-in" placeholder="Укажите дату">
+              <input class="form-date form-style" type="text" id="appointment-date-in" name="appointment-date-in" placeholder="27 апреля 2020">
               <span class="appointment-error">Мы не можем отправить вас в прошлое.</span>
             </div>
           </div>
           <div class="appointment-date-out">
             <label class="appointment-date" for="appointment-date-out">Дата Выезда:</label>
             <div class="form-date-container">
-              <input class="form-date form-style" type="text" id="appointment-date-out" name="appointment-date-out" placeholder="Укажите дату">
+              <input class="form-date form-style" type="text" id="appointment-date-out" name="appointment-date-out" placeholder="1 сентября 2021">
               <span class="appointment-form-info">На эти даты есть свободные номера. Пока есть.</span>
             </div>
           </div>
@@ -226,9 +228,8 @@
               <div class="input-number">
                 <input class="adult-number form-style" type="text" id="appointment-adult" name="appointment-adult" value="2">
                 <button class="number-plus plus-minus">
-                  <svg class="plus" width="13" height="13"xmlns="http://www.w3.org/2000/svg">
+                  <svg class="plus" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-                    </g>
                   </svg>
                 </button>
                 <button class="number-minus plus-minus">
@@ -243,19 +244,17 @@
                 <label class="appointment-date" for="appointment-children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <div class="tooltip-icon">
-                      <svg width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_33716_652)">
+                    <svg width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_33716_652)">
                         <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
                         <path d="M1 0H0V1H1V0Z" fill="white"/>
-                        </g>
-                        <defs>
+                      </g>
+                      <defs>
                         <clipPath id="clip0_33716_652">
                         <rect width="1" height="9" fill="white"/>
                         </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
+                      </defs>
+                    </svg>
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
@@ -263,9 +262,8 @@
               <div class="input-number">
                 <input class="children-number form-style" type="text" id="appointment-children" name="appointment-children" value="1">
                 <button class="number-plus plus-minus">
-                  <svg class="plus" width="13" height="13"xmlns="http://www.w3.org/2000/svg">
+                  <svg class="plus" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
-                    </g>
                   </svg>
                 </button>
                 <button class="number-minus plus-minus">
