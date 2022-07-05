@@ -976,7 +976,6 @@ body {
 
 .range {
   display: flex;
-  flex-wrap: wrap;
   max-width: 287px;
   margin-top: 34px;
 }
